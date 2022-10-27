@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mindinventory</title>
+
+    <!-- Fontsawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Custome css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-4" href="index.html">
+                    <img src="assets/image/icon/png/cus-logos.png" alt="brandlogo" width=" 250"
+                        height="auto" >   
+                        <!-- <img src="assets/image/untitled.png" alt="brandlogo" width=" auto"
+                        height="100" >   -->
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0 ">
+                        <li class="nav-item me-4">
+                            <a class="nav-link kk" aria-current="page" href="Service.html">Services</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link kk" href="solution.html">Solutions</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link kk" aria-current="page" href="#">Hire Team</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link kk" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item me-4  menu position-relative">
+                            <a class="nav-link kk" aria-current="page" href="aboutus.html">About Us</a>
+                            <div class="submenu  ">
+                                <div class="d-flex p-4 justify-content-md-between g-3 flex-column flex-md-row">
+                                    <div class="col-12 col-md-6 ">
+                                        <ul class="drop-sk p-0">
+                                            <span class="kkr text-gray d-inline-block mb-3">About us</span>
+                                            <li><i class="fa-regular fa-circle me-3 "></i><a href="#"
+                                                    class="text-white fs-7">Company Overview</a></li>
+                                            <li><i class="fa-regular fa-circle me-3 "></i><a href="#"
+                                                    class="text-white fs-7">Client Testimonials</a></li>
+                                            <li><i class="fa-regular fa-circle me-3 "></i><a href="contactUs.html"
+                                                    class="text-white fs-7">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <ul class="drop-sk p-md-2 p-0">
+                                            <span class="kkr text-gray d-inline-block mb-3">Others</span>
+                                            <li><i class="fa-regular fa-circle me-3 "></i><a href="#"
+                                                    class="text-white fs-7">Life@MI</a></li>
+                                            <li><i class="fa-regular fa-circle me-3 "></i><a href="#"
+                                                    class="text-white fs-7">FAQ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link kk" href="insight.html">Insights</a>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item me-4">
+                            <a herf="#" class="btn bg-primary text-white rounded-pill" type="submit">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="resourse-page dark-mode p-0  position-relative z-index-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 col-lg-8 offset-1 offset-lg-2">
+                    <div class="row  mb-5">
+                        <div class=" px-0 col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                            <div class="d-none d-lg-block  resourse-title">
+                                <h1 class="section-title">Insights</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-resourse-content">
+                        <div class="row">
+                            <div class=" px-0 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                                <div class="category-menu-container">
+                                    <div class="d-block d-lg-none  mobile-container">
+                                        <div class="topnav d-flex align-items-center">
+                                            <div class="title"><span class="resourse-mobile-title ">Insights</span>
+                                            </div>
+                                            <div id="mobileLinks" class="d-none"><span
+                                                    class="category-title selected">All</span><span
+                                                    class="category-title ">Blog</span><span
+                                                    class="category-title ">Podcasts</span><span
+                                                    class="category-title ">Infographics</span><span
+                                                    class="category-title ">Whitepapers</span><span
+                                                    class="category-title d-none">Success Stories</span><span
+                                                    class="category-title ">Videos</span></div>
+                                            <div class="icon-box"><img width="27" height="26" class="icon img-fluid "
+                                                    src="assets/image/icon/menu-icon.79ffeb74.svg" alt="Menu"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-lg-block category-container">
+                                        <div class="d-flex category-details"><span
+                                                class="category-title selected">All</span><span
+                                                class="category-title ">Blog</span><span
+                                                class="category-title ">Podcasts</span><span
+                                                class="category-title ">Infographics</span><span
+                                                class="category-title ">Whitepapers</span><span
+                                                class="category-title d-none">Success Stories</span><span
+                                                class="category-title ">Videos</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-row p-0 col-xl-9 col-lg-9 col-md-12 col-sm-12">
+                                <div class=" d-flex flex-wrap card-view">
+                                    <div class="col-12">
+                                        <div class="d-flex flex-wrap">
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-start">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxss text-center ">
+                                                            <picture>
+                                                                 <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/flutter-for-automotive-app-development-1.webp"
+                                                                    loading="lazy"
+                                                                    alt="Why Did BMW and Toyota Choose Flutter for Automotive App Development?"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Blog</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">Why Did BMW and Toyota Choose Flutter
+                                                                for Automotive App Development?</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-end">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxss text-center ">
+                                                            <picture>
+                                                                <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/ux-design-for-ecommerce.webp"
+                                                                    loading="lazy"
+                                                                    alt="UX Design Best Practices for eCommerce Stores That Guarantee Better Sales"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Blog</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">UX Design Best Practices for eCommerce
+                                                                Stores That Guarantee Better Sales</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-start">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                 <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/7-email-tips-for-startups-to-win-vcs-investments.webp"
+                                                                    loading="lazy"
+                                                                    alt="7 email tips for startups to win vcs investments"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Podcast</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">7 Email Tips for Startups to Win VCs |
+                                                                Startup Guide</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-end">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/complete-guide-to-nft-marketplace-development.webp"
+                                                                    loading="lazy"
+                                                                    alt="complete guide to nft marketplace development"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Podcast</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">A Complete Guide to NFT Marketplace
+                                                                Development</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-start">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                 <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/infography_landscape.webp"
+                                                                    loading="lazy" alt="Web 3.0 infography"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Infographic
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">Web 3.0 – Everything You Need to Know
+                                                                About</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-end">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                 <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/react-native-tools-horizontal.webp"
+                                                                    loading="lazy" alt="react native tools"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Infographic
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">Amazing React Native Tools For Your
+                                                                Next Project</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-start">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/saas-development-horizontal.webp"
+                                                                    loading="lazy" alt="saas development"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Whitepaper
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">An Ultimate Guide To SaaS Product
+                                                                Development</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-end">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/on-demand-service-horizontal.webp"
+                                                                    loading="lazy" alt="on demand service"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Whitepaper
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">The On-Demand Service: Adrenaline for
+                                                                the Mobile App Industry</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-start">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                 <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/ementoring-platform.webp"
+                                                                    loading="lazy" alt="eMentoring platform"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Video</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">eMentoring Platform Developed By
+                                                                MindInventory</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 d-flex card-section justify-content-end">
+                                                <div class="card-container">
+                                                    <div class="card">
+                                                        <div class="img-boxs text-center ">
+                                                            <picture>
+                                                                <img width="420" height="204"
+                                                                    src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/eureka-2022.webp"
+                                                                    loading="lazy" alt="eureka 2022"
+                                                                    class="img-fluid custom-img-card rounded  mx-auto d-block">
+                                                            </picture>
+                                                            <div class="card-img-overlay-coustom">
+                                                                <div class="card-icon">
+                                                                    <p class="card-text card-category-name">Video</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h2 class="card-text">Eureka 2022 | MindInventory 11th
+                                                                Anniversary Celebration</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid grid-line-wrapper ">
+                    <div class="row">
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                        <div class="col p-0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- ***********************************Contact Now ************************** -->
+    <section class="new-footer-section dark-mode pb-0 z-index-0 position-relative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 col-lg-8 offset-1 offset-lg-2 px-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row h-100">
+                                <div class="col-md-12">
+                                    <h2 class="poppins-bold-font"><span
+                                            class="outlined-support-text d-block">Say</span><span
+                                            class="outlined-text d-block uppercase-text">hello!</span></h2>
+                                </div>
+                                <div class="col-md-12 mt-0">
+                                    <div class="communication-address mt-5 mb-4">
+                                        <div class="d-flex mb-2 align-items-center justify-content-start"><span>
+                                                <div class="footer-icons"><img src="assets/image/icon/skype.svg"
+                                                        alt="skype"></div> Skype
+                                            </span><a href="">biz.mindinventory</a></div>
+                                        <div class="d-flex mb-2 align-items-center justify-content-start"><span>
+                                                <div class="footer-icons"><img src="assets/image/icon/email..svg"
+                                                        alt="email"></div> Email
+                                            </span><a class="opacity-1" href="">sales@mindinventory.com</a></div>
+                                        <div class="d-flex mb-2 "><span>
+                                                <div class="footer-icons"><img src="assets/image/icon/call.svg"
+                                                        alt="call"></div> Call
+                                            </span>
+                                            <div class="d-block pl-3 mb-2"><a href="tel:91-951-229-3490"
+                                                    class="p-0 mb-2 d-block text-decoration-none"><span
+                                                        class="d-block text-white">India</span>+91-951-229-3490</a><a
+                                                    href="tel:1-216-609-0691"
+                                                    class="p-0 mb-3 d-block text-decoration-none"><span
+                                                        class="d-block text-white">USA</span>+1-216-609-0691</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-0">
+                            <section class="new-contact-get-in-touch-section p-0">
+                                <div class="container-fluid px-0">
+                                    <div class="row m-0">
+                                        <div class="col-md-12 px-0">
+                                            <form class="contact-form" id="contactForm">
+                                                <h5 class="mb-4 mb-xl-5 sub-header regularBoldFont">For Project
+                                                    Inquiries</h5>
+                                                <div class="mb-4 form-item"><input type="text" placeholder="Name"
+                                                        class="w-100 regular-text" value=""><small
+                                                        class="error-text"></small></div>
+                                                <div class="mb-4 form-item"><input type="email"
+                                                        placeholder="Email Address" class="w-100 regular-text" value="">
+                                                </div>
+                                                <div class="mb-4 form-item">
+                                                    <div class="col-12 pr-0">
+                                                        <input type="text" placeholder="Contact Number"
+                                                            class="w-100 regular-text" value="">
+                                                    </div>
+
+                                                </div>
+                                                <div class="mb-4 form-item">
+                                                    <div class="col-12 pr-0">
+                                                        <input type="text" placeholder="Enter Country "
+                                                            class="w-100 regular-text" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4 form-item"><textarea placeholder="Message"
+                                                        class="pt-4 w-100 regular-text" rows="4"></textarea><small
+                                                        class="error-text"></small></div>
+
+                                                <div class="form-item submit-btn"><button type="submit"
+                                                        class="submit-button">Send Message</button></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-8 offset-1 offset-lg-2 mb-4 footer-location">
+                    <div class="row mx-0 align-items-center">
+                        <div class="col-12 col-md-12 col-xl-3 pr-0 pl-xl-5"><a href="/"><img width="114" height="41"
+                                    src="assets/image/icon/ZeptLogo-2.png" alt="mi logo"
+                                    class="footer-logo" loading="lazy"></a></div>
+                        <div class="col-12 col-md-6 col-xl-6 pr-0 pl-xl-5">
+                            <div class="communication-location r-communication-address"><span class="d-flex">
+                                    <div class="footer-icons"><img src="assets/image/icon/addressIndia.svg"
+                                            alt="address"></div> India
+                                </span>
+                                <p>801, City Centre 2,</p>
+                                <p>Science City Road, Sola-380060</p>
+                                <p>Ahmedabad, Gujarat, India</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3 pr-0 pl-xl-0">
+                            <div class="communication-location"><span class="d-flex">
+                                    <div class="footer-icons"><img src="assets/image/icon/addressUsa.svg" alt="address">
+                                    </div> USA
+                                </span>
+                                <p>9341 Ellis Way, Strongsville,</p>
+                                <p>Ohio 44136</p>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-8 offset-1 offset-lg-2 footer-copyright">
+                    <div class="row mx-0 justify-content-between">
+                        <div class="col-md-6 col-lg-6 xol-xl-3 pl-0">
+                            <p>© 2022 Zeptcode All rights reserved.</p>
+                            <ul class="m-0 p-0 quick-links">`<li><a href="/about-us.php">About Us</a></li>
+                                <li><a href="/all-portfolios.php">Portfolio</a></li>
+                                <li><a href="/blog/">Blog</a></li>
+                                <li><a href="/privacy-policy.php">Privacy Policy</a></li>
+                                <li><a href="/sitemap.php">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 pl-0 pr-0">
+                            <div class="social-media mt-4 mt-md-0 social-media-new">
+                                <h4>Follow us on</h4>
+                                <ul class="d-flex align-items-center social-media-icons p-0">
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/facebook.svg" alt="Facebook"></a></li>
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/dribbble.svg" alt="Dribble"></a></li>
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/linkedIn.svg" alt="LinkedIn"></a></li>
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/twitte.svg" alt="Twitter"></a></li>
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/instagram.svg" alt="Instagram"></a></li>
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/youtube.svg" alt="You Tube"></a></li>
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/pinterest.svg" alt="Pinterest"></a></li>
+                                    <li class="regular-text mr-2"><a href="" class="p-2"
+                                            rel="nofollow noopener noreferrer" target="_blank"><img loading="lazy"
+                                                src="assets/image/icon/medium.svg" alt="Medium"></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid grid-line-wrapper ">
+            <div class="row">
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+                <div class="col p-0"></div>
+            </div>
+        </div>
+    </section>
+    <!--***************** javaScript And jquery CDN *******************-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/main.js"></script>
+    <!-- slick slider -->
+</body>
+
+</html>
