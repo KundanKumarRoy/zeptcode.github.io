@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mindinventory</title>
-    
+
     <!-- Fontsawesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -16,6 +16,123 @@
     <!-- Custome css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cub-section {
+            position: absolute;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            transform: perspective(700px);
+            padding-top: 22px;
+        }
+
+        .box {
+            position: absolute;
+            transform-style: preserve-3d;
+            top: -100px;
+            left: 100px;
+        }
+
+        .box .cube {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animate 20s infinite linear;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .box .cube div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .box .cube div span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(#fb6200, #fb6200, #c3300f);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box .cube div span img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box .cube .top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background: #b22708;
+            transform: rotateX(90deg) translateZ(100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box .cube .top::before {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background-color: #fb6200;
+            filter: blur(50px);
+            transform: translateZ(-400px);
+            box-shadow: 0 0 120px rgba(251, 98, 0, 0.2),
+                0 0 200px rgba(251, 98, 0, 0.4),
+                0 0 300px rgba(251, 98, 0, 0.6),
+                0 0 400px rgba(251, 98, 0, 0.8),
+                0 0 500px rgba(251, 98, 0, 1);
+        }
+
+        @media (max-width:620px) {
+            .box {
+                position: absolute;
+                transform-style: preserve-3d;
+                top: 53px;
+                left: 64px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .box {
+                position: absolute;
+                transform-style: preserve-3d;
+                top: -27px;
+                left: 39px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -23,9 +140,8 @@
         <nav class="navbar navbar-expand-lg bg-white p-0">
             <div class="container-fluid">
                 <a class="navbar-brand ms-4" href="index.html">
-                        <img src="assets/image/icon/png/cus-logos.png" alt="brandlogo" width=" 250"
-                        height="auto" >   
-                        <!-- <img src="assets/image/untitled.png" alt="brandlogo" width=" auto"
+                    <img src="assets/image/icon/png/cus-logos.png" alt="brandlogo" width=" 250" height="auto">
+                    <!-- <img src="assets/image/untitled.png" alt="brandlogo" width=" auto"
                         height="100" >   -->
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -102,7 +218,32 @@
                             </div>
                         </div>
                         <div class="col-md-6 p-0 mt-5 mt-md-0">
-                            <div class="hero-img-wrapper"><svg id="hero" data-name="Layer 1"
+                            <div class="hero-img-wrapper">
+                                <section class="cub-section">
+                                    <div class="box">
+                                        <div class="cube">
+                                            <div class="top"></div>
+                                            <div>
+                                                <span style="--i:0">
+                                                    <img src="assets/image/icon/PNG/AiViewer__1666785153667_3.png"
+                                                        alt="">
+                                                </span>
+                                                <span style="--i:1">
+                                                    <img src="assets/image/icon/PNG/AiViewer__1666785153667_3.png"
+                                                        alt=""></span>
+                                                <span style="--i:2">
+                                                    <img src="assets/image/icon/PNG/AiViewer__1666785153667_3.png"
+                                                        alt="">
+                                                </span>
+                                                <span style="--i:3">
+                                                    <img src="assets/image/icon/PNG/AiViewer__1666785153667_3.png"
+                                                        alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- <svg id="hero" data-name="Layer 1"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 859.63 838.53">
                                     <defs>
@@ -586,7 +727,8 @@
                                             </animate>
                                         </image>
                                     </g>
-                                </svg></div>
+                                </svg> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1155,8 +1297,7 @@
                                             rel="noopener noreferrer">GitHub</a></div>
                                 </div>
                             </div>
-                            <div class="col-md-12   banner-small-box"><a class="pe-3"
-                                    href="/portfolio/super-app.php">
+                            <div class="col-md-12   banner-small-box"><a class="pe-3" href="/portfolio/super-app.php">
                                     <div class="small-img-box p-0 pr-sm-3 pr-xl-4 ">
                                         <div class="img-box">
                                             <picture>
@@ -1307,10 +1448,9 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                         <img width="340" height="200"
-                                            src="assets/image/img/google.webp"
-                                            loading="lazy" alt="google" class="w-100 d-block ss-img">
-                                        </picture>
+                                        <img width="340" height="200" src="assets/image/img/google.webp" loading="lazy"
+                                            alt="google" class="w-100 d-block ss-img">
+                                    </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/google.svg" loading="lazy"
                                         alt="google" class="mx-auto"></div>
@@ -1320,8 +1460,7 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                         <img width="340" height="200"
-                                            src="assets/image/img/simon-sinek.webp"
+                                        <img width="340" height="200" src="assets/image/img/simon-sinek.webp"
                                             loading="lazy" alt="simon sinek" class="w-100 d-block ss-img">
                                     </picture>
                                 </div>
@@ -1333,9 +1472,8 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                        <img width="340" height="200"
-                                            src="assets/image/img/tinder.webp"
-                                            loading="lazy" alt="tinder" class="w-100 d-block ss-img">
+                                        <img width="340" height="200" src="assets/image/img/tinder.webp" loading="lazy"
+                                            alt="tinder" class="w-100 d-block ss-img">
                                     </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/tinder.svg" loading="lazy"
@@ -1346,10 +1484,9 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                        <img width="340" height="200"
-                                            src="assets/image/img/booking.webp"
-                                            loading="lazy" alt="booking" class="w-100 d-block ss-img">
-                                        </picture>
+                                        <img width="340" height="200" src="assets/image/img/booking.webp" loading="lazy"
+                                            alt="booking" class="w-100 d-block ss-img">
+                                    </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/booking.svg" loading="lazy"
                                         alt="booking" class="mx-auto"></div>
@@ -1359,10 +1496,9 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                        <img width="340" height="200"
-                                            src="assets/image/img/super-app.webp"
+                                        <img width="340" height="200" src="assets/image/img/super-app.webp"
                                             loading="lazy" alt="superapp" class="w-100 d-block ss-img">
-                                        </picture>
+                                    </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/i-am-plus.svg" loading="lazy"
                                         alt="superapp" class="mx-auto"></div>
@@ -1372,10 +1508,9 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                         <img width="340" height="200"
-                                            src="assets/image/img/justfab.webp"
-                                            loading="lazy" alt="justfab" class="w-100 d-block ss-img">
-                                        </picture>
+                                        <img width="340" height="200" src="assets/image/img/justfab.webp" loading="lazy"
+                                            alt="justfab" class="w-100 d-block ss-img">
+                                    </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/justfab.svg" loading="lazy"
                                         alt="justfab" class="mx-auto"></div>
@@ -1385,10 +1520,9 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                        <img width="340" height="200"
-                                            src="assets/image/img/maersk.webp"
-                                            loading="lazy" alt="maersk" class="w-100 d-block ss-img">
-                                        </picture>
+                                        <img width="340" height="200" src="assets/image/img/maersk.webp" loading="lazy"
+                                            alt="maersk" class="w-100 d-block ss-img">
+                                    </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/maersk.svg" loading="lazy"
                                         alt="maersk" class="mx-auto"></div>
@@ -1398,10 +1532,9 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                       <img width="340" height="200"
-                                            src="assets/image/img/panasonic.webp"
+                                        <img width="340" height="200" src="assets/image/img/panasonic.webp"
                                             loading="lazy" alt="panasonic" class="w-100 d-block ss-img">
-                                        </picture>
+                                    </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/panasonic.svg" loading="lazy"
                                         alt="panasonic" class="mx-auto"></div>
@@ -1411,9 +1544,8 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                         <img width="340" height="200"
-                                            src="assets/image/img/imdex.webp"
-                                            loading="lazy" alt="imdex" class="w-100 d-block ss-img">
+                                        <img width="340" height="200" src="assets/image/img/imdex.webp" loading="lazy"
+                                            alt="imdex" class="w-100 d-block ss-img">
                                     </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/imdex.svg" loading="lazy" alt="imdex"
@@ -1424,9 +1556,8 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                         <img width="340" height="200"
-                                            src="assets/image/img/ax.webp"
-                                            loading="lazy" alt="ax" class="w-100 d-block ss-img">
+                                        <img width="340" height="200" src="assets/image/img/ax.webp" loading="lazy"
+                                            alt="ax" class="w-100 d-block ss-img">
                                     </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/athlean-x.svg" loading="lazy"
@@ -1437,9 +1568,8 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                        <img width="340" height="200"
-                                            src="assets/image/img/pigi.webp"
-                                            loading="lazy" alt="pigi" class="w-100 d-block ss-img">
+                                        <img width="340" height="200" src="assets/image/img/pigi.webp" loading="lazy"
+                                            alt="pigi" class="w-100 d-block ss-img">
                                     </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/pigi.svg" loading="lazy" alt="pigi"
@@ -1450,9 +1580,8 @@
                             <div class="game-logos">
                                 <div class="bg-img">
                                     <picture>
-                                         <img width="340" height="200"
-                                            src="assets/image/img/helpo.webp"
-                                            loading="lazy" alt="helponymous" class="w-100 d-block ss-img">
+                                        <img width="340" height="200" src="assets/image/img/helpo.webp" loading="lazy"
+                                            alt="helponymous" class="w-100 d-block ss-img">
                                     </picture>
                                 </div>
                                 <div class="logo-name"><img src="assets/image/icon/helpo.svg" loading="lazy"
@@ -1462,7 +1591,7 @@
                     </div>
                 </div>
                 <!-- Client Mobile view -->
-                
+
             </div>
         </div>
         <div class="container-fluid grid-line-wrapper ">
@@ -1564,12 +1693,11 @@
                 </div>
                 <div class="col-10 col-lg-8 offset-1 offset-lg-2 mb-4 footer-location">
                     <div class="row mx-0 align-items-center">
-                        <div class="col-12 col-md-12 col-xl-3 pr-0 pl-xl-5 ">
+                        <div class="col-12 col-md-12 col-xl-3 pr-0 pl-xl-5 text-center text-md-left">
                             <a href="/">
-                                <img width=" " height=" "
-                                    src="assets/image/icon/svg/px-AiViewer__1666785153667_3.svg" alt="zeptlogo"
-                                    class="footer-logo" loading="lazy"></a>
-                                </div>
+                                <img width=" " height=" " src="assets/image/icon/svg/px-AiViewer__1666785153667_3.svg"
+                                    alt="zeptlogo" class="footer-logo" loading="lazy"></a>
+                        </div>
                         <div class="col-12 col-md-6 col-xl-6 pr-0 pl-xl-5">
                             <div class="communication-location r-communication-address"><span class="d-flex">
                                     <div class="footer-icons"><img src="assets/image/icon/addressIndia.svg"
@@ -1664,7 +1792,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
     <script src="assets/js/main.js"></script>
-    <!-- slick slider --> 
+    <!-- slick slider -->
 </body>
 
 </html>
